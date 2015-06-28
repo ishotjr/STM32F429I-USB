@@ -75,7 +75,7 @@ uint32_t HAL_GetTick(void) {
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
 static void Error_Handler(void);
-static void Init_Timers(void);
+extern void Init_Timers(void);
 
 /* Private functions ---------------------------------------------------------*/
 /**
