@@ -73,6 +73,7 @@ uint32_t HAL_GetTick(void) {
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
 static void Error_Handler(void);
+static void Init_Timers(void);
 
 /* Private functions ---------------------------------------------------------*/
 /**
@@ -100,6 +101,7 @@ int main(void)
 
   /* Configure the System clock to have a frequency of 168 MHz */
   SystemClock_Config();
+	Init_Timers();
 
 
   /* Add your application code here
