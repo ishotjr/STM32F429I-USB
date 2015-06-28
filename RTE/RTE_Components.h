@@ -10,6 +10,8 @@
 #ifndef RTE_COMPONENTS_H
 #define RTE_COMPONENTS_H
 
+#define RTE_CMSIS_RTOS                  /* CMSIS-RTOS */
+        #define RTE_CMSIS_RTOS_RTX              /* CMSIS-RTOS Keil RTX */
 #define RTE_DEVICE_FRAMEWORK_CLASSIC
 #define RTE_DEVICE_HAL_COMMON
 #define RTE_DEVICE_HAL_CORTEX
