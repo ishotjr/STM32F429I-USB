@@ -42,6 +42,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "Board_LED.h"                  // ::Board Support:LED
+
 
 #ifdef _RTE_
 #include "RTE_Components.h"             // Component selection
@@ -102,6 +104,7 @@ int main(void)
   /* Configure the System clock to have a frequency of 168 MHz */
   SystemClock_Config();
 	Init_Timers();
+	LED_Initialize();
 
 
   /* Add your application code here

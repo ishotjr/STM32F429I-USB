@@ -1,5 +1,7 @@
 
 #include <cmsis_os.h>                                           // CMSIS RTOS header file
+#include "Board_LED.h"                  // ::Board Support:LED
+static int timer_cnt = 0;
 
 /*----------------------------------------------------------------------------
  *      Timer: Sample timer functions
@@ -28,7 +30,14 @@ static osTimerDef (Timer2, Timer2_Callback);
  
 // Periodic Timer Example
 static void Timer2_Callback  (void const *arg)  {
-  // add user code here
+
+	// toggle LED
+	timer_cnt++;
+	
+	if(timer_cnt & 1)
+		LED_On(0);
+	else
+		LED_Off(0);
 }	
 
 
